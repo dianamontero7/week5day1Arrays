@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5.1 by INSERT NAME HERE</title>
+    <title>Lab 5.1 by Diana Montero</title>
 </head>
 <body>
-    <script src="arrays_lab.js">
+    <script>
         /**
         * Part 1 - Creating Arrays
         */
 
         // 1. Create an Empty array
 
+        let emptyArray = [];
+
+        console.log(emptyArray);
+
         // 2. Create an array that contains the string values "You" "can" "do" "it"
 
+        let stringArray = ["You", "can", "do", "it"];
 
-
-
-
-
+        console.log(stringArray);
 
         /**
         * Part 2 - Accessing Array elements by Index
@@ -29,12 +31,18 @@
 
         // 1. Print the first element of the array.
 
+        console.log(animals[0]);
 
         // 2. Print the third element of the array.
 
+        console.log(animals[2]);
 
         // 3. Print the last element of the array using the length property. Explain your answer in comments
 
+        console.log(animals[animals.length - 1]);
+
+        // The array goes from 0 to 4
+        // Taking one out using the length of the array will give you the last element 
 
         // 4. Try to access an index that is out of bounds (e.g., index 10) and observe what happens.
         console.log(animals[10]);
@@ -49,6 +57,7 @@
 
         // 1. Insert the number 5 at index 0
 
+        numbers[0] = 5;
 
 
 
@@ -57,6 +66,7 @@
         // 2. Insert the number 10 at index 1
 
 
+        numbers[1] = 10;
 
 
         console.log(numbers);  // Expected output: [5, 10]
@@ -64,23 +74,28 @@
         // 3. Insert the number 15 at index 2
 
 
-
+        numbers[2] = 15;
 
         console.log(numbers);  // Expected output: [5, 10, 15]
 
         // 4. Try inserting a value at an index that is greater than the current length (e.g., index 5)
 
 
+        numbers[5] = 20;
+        
 
 
         console.log(numbers);  // Expected output: [5, 10, 15, empty x 2, 20]
 
         // 5. Print the length of the array after each insertion.
         
+        console.log(numbers.length);
 
 
         // 6. Change the value stored at index 1 from 10 to 30.
 
+        numbers[1] = 30;
+        console.log(numbers);
 
 
         /**
@@ -91,9 +106,16 @@
 
         // 1. Use a `for` loop to print each color in the array.
 
+        for (let i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        }
 
         // 2. Modify the loop to print the index along with each color.
         
+        for (let i = 0; i < colors.length; i++) {
+            console.log(i + ": " + colors[i]);
+        }
+
     </script>
 </body>
 </html>
